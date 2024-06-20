@@ -1,0 +1,48 @@
+# Ain't no sunshine by Bill Withers
+# This is not faithful to the original version. It has a slightly funky vibe.
+
+(tempo! 90)
+(key-sig! '(c major))
+
+# Guitar chords
+cM = >c8/e/g< # C Major
+dm = d16/f/a # D minor
+em = e16/g/b # E minor
+am = a16/>c/e< # A minor
+
+midi-voice-oohs:
+  verse = [
+    [r4 e8 g16 a8. > c8 < b8 g8 | a1] *2
+    r4 e8 a16 > c8. e8 d8 e8 | e8 d4 d8 c4 < g4 | a4 > c16 d16 c4 < a8 g8 a8 | a2. r4
+  ]
+
+  (ppp)
+  verse*2
+
+electric-guitar-clean:
+  verse = [
+    [am am r4 am am r4. cM | am am r4 am am r2] *2
+    em em r4 em em r2 | dm dm r4 dm dm r2 | am am r4 am am r4. cM | am r8. r2.
+  ]
+
+  (ppp)
+  r1 | verse*2
+
+electric-bass:
+  o1
+  verse = [
+    a2 r8 e8 g8 r8 | a2. r4 |
+    a2 r8 e8 g8 r8 | a2 r8 a8 > c8 d8 |
+    e2 r8 b8 e8 r8 | d2 r8 e8 d8 c8 | < a2 e4 g4 | a16 r8. r2.
+  ]
+
+  r1 | verse*2
+
+percussion:
+  o2
+  verse = [
+    [f+8/c f+8 f+8/d f+8 f+8 f+8/c f+8/d f+8] * 6
+    f+8/c f+8 f+8/d f+8 f+8/c a+8 f+8/d a+8 | f+8/c r8 r2.
+  ]
+
+  r1 | verse*2

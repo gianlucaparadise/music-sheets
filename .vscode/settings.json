@@ -1,0 +1,6 @@
+{
+    "code-runner.executorMap": {
+        "alda": "alda play -f"
+    },
+    "code-runner.saveFileBeforeRun": true,
+}
